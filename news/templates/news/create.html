@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HyperNews</title>
+    </head>
+
+    <body>
+        <h2>Create</h2>
+            <form action="/news/create/" method="post"> {% csrf_token %}
+                <label for="title">Title:</label>
+                <input type="text" name="title" id="title">
+                <br>
+                <br>
+                <label for="text">Text:</label>
+                <input type="text" name="text" id="text">
+                <br>
+                <br>
+                <button type="submit">Create article</button>
+            </form>
+        <p>
+            <a href="/news/">Main Page</a>
+        </p>
+    </body>
+</html>
